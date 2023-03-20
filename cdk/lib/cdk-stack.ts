@@ -33,7 +33,7 @@ export class CdkStack extends Stack {
     const container = taskDefinition.addContainer("NextJsFargateContainer", {
       image,
       // store the logs in cloudwatch 
-      logging: ecs.LogDriver.awsLogs({ streamPrefix: "myexample-logs" })
+      logging: ecs.LogDriver.awsLogs({ streamPrefix: "nextjsfargate-logs" })
     });
 
     container.addPortMappings({
