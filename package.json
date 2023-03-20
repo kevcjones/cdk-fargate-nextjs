@@ -1,0 +1,12 @@
+{
+    "name": "nextjs-cdk-fargate-boilerplate",
+    "version": "1.0.0",
+    "scripts": {
+        "dev": "npm run dev --workspace=www",
+        "deploy": "npm run cdk deploy --workspace=cdk"
+    },
+    "workspaces": [
+        "www",
+        "cdk"
+    ]
+}
